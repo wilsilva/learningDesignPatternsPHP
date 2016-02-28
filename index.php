@@ -6,27 +6,17 @@
  * Time: 11:29 AM
  */
 
-include_once 'config/config.php';
+require_once 'App/config/config.php';
 
-
-use myapp\model\Pessoa;
-use myapp\model\dao\PessoaDao;
-use myapp\controller\PessoaController;
+use App\model\Pessoa;
+use App\controller\PessoaController;
+use App\model\dao\PessoaDao;
 
 $pessoa = new Pessoa();
-$pessoa->helloWorld();
-
-$pessoaDao = new PessoaDao();
-$pessoaDao->findPessoaById(12);
+echo $pessoa->helloWorld();
 
 $pessoaController = new PessoaController();
 $pessoaController->validarPessoa();
 
-$passwd = password_hash('123456',PASSWORD_DEFAULT);
-echo $passwd . " \n";
-
-if(password_verify('123456',$passwd)){
-    echo "Password Válido \n";
-}
-
-
+$pessoaDao = new PessoaDao();
+$pessoaDao->findPessoaById(2);

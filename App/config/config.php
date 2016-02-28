@@ -5,7 +5,7 @@
  * Date: 2/25/16
  * Time: 2:43 PM
  */
-include_once 'config/autoload.php';
+include_once 'App/config/autoload.php';
 
 define('db_user','root');
 define('db_pass','root');

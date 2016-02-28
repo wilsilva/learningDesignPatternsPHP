@@ -6,7 +6,7 @@
  * Date: 2/25/16
  * Time: 11:43 AM
  */
-namespace myapp\model\dao;
+namespace App\model\dao;
 
 class PessoaDao
 {

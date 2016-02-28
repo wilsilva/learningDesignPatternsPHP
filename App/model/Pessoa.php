@@ -6,12 +6,12 @@
  * Date: 2/25/16
  * Time: 11:29 AM
  */
-namespace myapp\model;
+namespace App\model;
 
 class Pessoa
 {
 
     public function helloWorld(){
-        echo "Hello World \n";
+        return "Hello World \n";
     }
 }
